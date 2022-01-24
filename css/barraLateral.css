@@ -1,0 +1,27 @@
+.barraLateral{ 
+    position: fixed;
+    top: 0;
+    bottom: 0;   
+    z-index: 1;  
+    
+    background-color: #313131;
+}
+
+.barraLateral img{
+    margin: 20px;
+}
+
+.barraLateral p{
+    font-size: 16px;
+    line-height: 19px;
+
+    margin-right: 25px;
+}
+
+.barraLateral .color-white{    
+    color: white;
+}
+
+.closed p{
+    display: none;
+}
