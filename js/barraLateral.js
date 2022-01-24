@@ -16,6 +16,7 @@ btnLateral.addEventListener("click", () => {
 favoritos.addEventListener("click", () => {
     titulo.textContent = "Favoritos";
     imagens.forEach(imagem => {
+        imagem.removeEventListener('click', teste)
         const like = imagem.querySelector(".like");
         if (like.classList.contains("hidden")) {
             imagem.classList.add("hidden");
@@ -26,6 +27,7 @@ favoritos.addEventListener("click", () => {
 inicio.addEventListener("click", () => {
     titulo.textContent = "Início";
     imagens.forEach(imagem => {
+        imagem.addEventListener("click", teste)
         imagem.classList.remove("hidden");
     })
 });

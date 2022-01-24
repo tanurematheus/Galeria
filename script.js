@@ -31,12 +31,17 @@ const updateBtn = (elemento) => {
     }
 }
 
+function teste(event) {
+    console.log(event);
+    modal.classList.remove("hidden");
+    imagemAtual = event.currentTarget;
+    console.log(event.target);
+    console.log(imagemAtual);
+    updateModal(imagemAtual);
+}
+
 imagens.forEach(imagem => {
-    imagem.addEventListener("click", () => {
-        modal.classList.remove("hidden");
-        imagemAtual = imagem;
-        updateModal(imagemAtual);
-    })
+    imagem.addEventListener("click", teste)
 })
 
 btnPrevious.addEventListener("click", () => {
